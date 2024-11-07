@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<script>
+function Validation()
+{
+const name=document.getElmentById("t1").value;
+const pass=document.getElementById("t2").value;
+if (name=="")
+	alert("enter a name");
+else if(pass.length<8)
+	alert("password length must be 8");
+else
+	alert("form submitted");
+}
+</script>
+</head>
+<body>
+<form method="path" name="regestrationform" action="" >
+<label>NAME:</label>
+<input type="text" id="t1"><br><br>
+<label>PASSWORD:</label>
+<input type="password" id="t2">
+<button type="submit" onSubmit="Validation()">SUBMIT </button>
+</form>
+</body>
+</html>
